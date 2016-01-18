@@ -1,7 +1,7 @@
 ##Նկարագրություն
 
 Վեբ էջում կարելի է գտնել տեղեկություններ **Կտուլհուի** մասին:<br/>
-Այն պատրաստվել է մոտավորապես [*Cthulhu*](https://en.wikipedia.org/wiki/Cthulhu) էջի  նմանությամբ:
+Մոտավորապես [*Cthulhu*](https://en.wikipedia.org/wiki/Cthulhu) էջի  նմանությամբ:
 
 ###Հասանելի է
 - Google Chrome
@@ -9,4 +9,5 @@
 - Mozilla Firefox
 
 ###Կան խնդիրներ
+- Internet Explorer (կապված չափերի հետ)
 
