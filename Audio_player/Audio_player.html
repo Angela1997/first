@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio_player</title>
+  <style>
+    #div {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body bgcolor="#E6E6FA">
+<div id="div">
+  <h1> Simple Audio Player</h1> <br>
+  <h2>ENIGMA</h2><br><br>
+
+  Distorted Love<br>
+  <audio controls>
+    <source src="Songs/Enigma_Distorted_Love.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+  Sitting on the Moon<br>
+  <audio controls>
+    <source src="Songs/Enigma_Sitting_on_the_Moon.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+  Lost Eleven<br>
+  <audio controls>
+    <source src="Songs/Enigma_Lost_Eleven.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+  Knocking On Forbidden Doors<br>
+  <audio controls>
+    <source src="Songs/Enigma_Knocking_On_Forbidden_Doors.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+  MMX (The Social Song)<br>
+  <audio controls>
+    <source src="Songs/Enigma_MMX_(The_Social_Song).mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+  Silence ust be heard<br>
+  <audio controls>
+    <source src="Songs/Enigma_Silence_must_be_heard.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+  Snow Of The Sahara<br>
+  <audio controls>
+    <source src="Songs/Enigma_Snow_Of_The_Sahara.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+  Sadness <br>
+  <audio controls>
+    <source src="Songs/Enigma_Sadness.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+  Why <br>
+  <audio controls>
+    <source src="Songs/Enigma_Why.mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+</div>
+<script>
+  document.addEventListener('play', function (e) {
+    var audios = document.getElementsByTagName('audio');
+    for (var i = 0, len = audios.length; i < len; i++) {
+      if (audios[i] != e.target) {
+        audios[i].pause();
+        audios[i].currentTime = 0.0;
+      }
+    }
+  }, true);
+</script>
+
+</body>
+</html>
