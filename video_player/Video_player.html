@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video_player</title>
+  <style>
+    #div {
+      text-align: center;
+    }
+
+    .video {
+      height: 580px;
+    }
+
+  </style>
+</head>
+<body bgcolor="#bfbfbf">
+<div id="div">
+  <h1>NATURE</h1> <br><br>
+
+  NORWAY <br><br>
+  <video class="video" onclick="playPause();" controls>
+    <source src="video/NORWAY%208K.mp4">
+    Your browser does not support the audio element.
+  </video>
+  <br><br>
+  PATAGONIA <br><br>
+  <video class="video" onclick="playPause();" controls>
+    <source src="video/PATAGONIA%208K.mp4">
+    Your browser does not support the audio element.
+  </video>
+  <br><br>
+  NEW ZEALAND <br><br>
+  <video class="video" onclick="playPause();" controls>
+    <source src="video/AMPLITUDE%20-%20NEW%20ZEALAND%204K-UHD.mp4">
+    Your browser does not support the audio element.
+  </video>
+  <br><br>
+  CANADA<br><br>
+  <video class="video" onclick="playPause();" controls>
+    <source src="video/Canada,%20Epic%20Drone%20Footage%20of%20British%20Columbia,%20Alberta%20and%20Yukon%20(4K).mp4">
+    Your browser does not support the audio element.
+  </video>
+  <br><br>
+  ICELAND<br><br>
+  <video height="432px;" onclick="playPause();" controls>
+    <source src="video/EYLENDA%20-%20Iceland%204K.mp4">
+    Your browser does not support the audio element.
+  </video>
+  <br><br>
+  MADAGASKAR <br><br>
+  <video class="video" onclick="playPause();" controls>
+    <source src="video/Samsung%20Madagascar%204K%20video.mp4">
+    Your browser does not support the audio element.
+  </video>
+  <br><br>
+  AUSTRALIA <br><br>
+  <video class="video" onclick="playPause();" controls>
+    <source src="video/8K%20Into%20The%20Nature,%20Australia%20Timelapse.mp4">
+    Your browser does not support the audio element.
+  </video>
+  <br><br>
+</div>
+<script>
+  document.addEventListener('play', function (e) {
+    var videos = document.getElementsByTagName('video');
+    for (var i = 0, len = videos.length; i < len; i++) {
+      if (videos[i] != e.target) {
+        videos[i].pause();
+        videos[i].currentTime = 0.0;
+      }
+    }
+  }, true);
+
+  function playPause() {
+    var myVideo = document.getElementsByClassName('video');
+    if (myVideo.paused)
+      myVideo.play();
+    else
+      myVideo.pause();
+  }
+</script>
+</body>
+</html>
