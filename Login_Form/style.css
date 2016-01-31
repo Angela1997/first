@@ -1,0 +1,18 @@
+html {
+  font: 100% sans-serif;
+}
+
+#div {
+  width: 350px;
+  height: 330px;
+  background: gainsboro;
+  border: solid black 1px;
+}
+
+#div1 {
+  margin-left: 80px;
+}
+
+#submit {
+  margin-left: 20px;
+}
