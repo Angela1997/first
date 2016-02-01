@@ -1,0 +1,39 @@
+html {
+  font: 100% sans-serif;
+}
+
+#div {
+  width: 550px;
+  height: 570px;
+  background: gainsboro;
+  border: solid black 1px;
+
+}
+
+#div1 {
+  margin-left: 90px;
+}
+
+#month1 {
+  margin-left: 60px;
+  margin-top: -36.5px;
+}
+
+#year {
+  margin-left: 165px;
+  margin-top: -38px;
+}
+
+#create {
+  width: 100px;
+  height: 30px;
+  margin-left: 300px;
+}
+
+#text1 {
+   font-size: 14px;
+}
+
+#text2 {
+   font-size: 14px;
+}
